@@ -1,7 +1,12 @@
-var nt1 = parseFloat(prompt("Digite a nota do 1° Aluno"));
-var nt2 = parseFloat(prompt("Digite a nota do 2° Aluno"));
-var nt3 = parseFloat(prompt("Digite a nota do 3° Aluno"));
+function func(){
 
-var media = (nt1 + nt2 + nt3) / 3
+    
+    var nt1 = parseFloat(document.getElementById("nt1").value);
+    var nt2 = parseFloat(document.getElementById("nt2").value);
+    var nt3 = parseFloat(document.getElementById("nt3").value);
 
-document.write("<p> A média das notas é: "+ media +"</p>")
+    
+    var media = (nt1 + nt2 + nt3) / 3
+    
+    document.getElementById("result").innerHTML = "<p> A média das notas é: "+ media +"</p>"
+}

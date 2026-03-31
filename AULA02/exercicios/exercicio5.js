@@ -1,3 +1,6 @@
-var lado = Number(prompt("Digite o lado do quadrado"));
-var area = lado ** 2
-document.write("<p>A area do quadrado é: " + area + "</p>");
+function func() {
+    var lado = Number(document.getElementById("lado").value);
+    var area = lado ** 2;
+    
+    document.getElementById("result").innerHTML="<p>A area do quadrado é: " + area + "</p>";
+}

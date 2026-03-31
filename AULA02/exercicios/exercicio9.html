@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <h1>Calcular o montante de juros simples</h1>
+    <form action="">
+        <label for="valori">Digite o valor inicial</label>
+        <input type="text" id="valorI" name="valori">
     
+        <label for="taxa">Digite a taxa de juros</label>
+        <input type="text" id="taxaJ" name="taxa">
+        
+        <label for="tp">Digite o tempo em anos</label>
+        <input type="text" id="tp" name="tp">
+    
+        <input type="button" value="Calcular" onclick="func()">
+    
+    </form>
+    <a href="../index.html">Voltar</a>
+
+
+    <p id="result"></p>
+
     <script src="exercicio9.js"></script>
 
 </body>

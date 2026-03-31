@@ -1,7 +1,14 @@
-var peso = parseFloat(prompt("Digite o peso em kg"));
-var altura = parseFloat(prompt("Digite a altura em metros"));
-
-var imc = peso / (altura * altura);
-document.write("<p>Peso: "+ peso +"</p>");
-document.write("<p>Altura: "+ altura +"</p>");
-document.write("<p>O índice de massa corporal é de: "+ imc +"</p>")
+function func() {
+    
+    var peso = parseFloat(document.getElementById("peso").value);
+    var altura = parseFloat(document.getElementById("altura").value);
+    
+    var imc = peso / (altura * altura);
+  
+    
+    document.getElementById("result").innerHTML = 
+    
+    "<p>Peso: "+ peso +"</p>" +
+    "<p>Altura: "+ altura +"</p>"+
+    "<p>O índice de massa corporal é de: "+ imc +"</p>";
+}
