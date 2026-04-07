@@ -4,5 +4,5 @@ function func() {
     
     var tCelsius = ((Number(tFahrenheit) - 32) * 5) / 9 
     
-    document.getElementById("result").innerHTML = "A temperatura em Celsius é: " + tCelsius
+    document.getElementById("result").innerHTML = "<p>A temperatura em Celsius é: " + tCelsius+"</p>"
 } 
